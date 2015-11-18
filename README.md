@@ -1,4 +1,4 @@
-These two scripts allow a user to generate a list of password permutations based on a known password format and sequentially test each password on an executable. 
+These two scripts allow a user to generate a list of password permutations based on a known password format and sequentially test each password on an Windows GUI executable. 
 
 Useage example:  
 ```>> gp.rb > perms.txt```
