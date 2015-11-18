@@ -19,3 +19,4 @@ Test passwords:
     >> Testing le3t  
     >> The password is le3t
 
+In the scripts, the text surrounded with ## must be replaced with strings specific to the application being tested.
