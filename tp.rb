@@ -12,16 +12,12 @@ puts response
 
 window = RAutomation::Window.new(:title => /TITLE OF .EXE WINDOW GOES HERE/i)
 sleep(0.5)
-puts "Window exists: #{window.exists?}" 
 if !window.exists?
  puts "Process launch failed, terminating"
  break
 end
 
-puts "Title: #{window.title }" 
-
 if window.text.include? "Error"
-  puts "Wrong password, killing PID #{window.pid}"
   Process.kill("KILL", window.pid)
   Process.waitall
 else
